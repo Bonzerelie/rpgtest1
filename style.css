@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#start-screen, #game-screen {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.start-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.green-button, .blue-button {
+  white-space: nowrap;
+  padding: 8px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  max-width: 100%;
+}
+
+.green-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.green-button:disabled {
+  background-color: #9E9E9E;
+  cursor: not-allowed;
+}
+
+.blue-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.correct {
+  background-color: #4CAF50 !important;
+}
+
+.incorrect {
+  background-color: #F44336 !important;
+}
+
+#note-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-items: center;
+}
+
+.blue-button {
+  width: 100%;
+  max-width: 200px;
+  box-sizing: border-box;
+}
+
+#reset-score {
+  margin-top: 10px;
+}
+
+.scoreboard {
+  text-align: center;
+}
